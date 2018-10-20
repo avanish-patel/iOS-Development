@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreML01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gV8-Ze-mbW">
+                                <rect key="frame" x="0.0" y="44" width="375" height="383"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="383" id="8qP-oT-uDx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prediction" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PS-nn-hxf">
+                                <rect key="frame" x="0.0" y="493" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="1Mt-g8-jGg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lk8-Q3-VLc">
+                                <rect key="frame" x="0.0" y="628" width="375" height="65"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lk8-Q3-VLc" secondAttribute="height" multiplier="75:13" id="q0m-6B-v1s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Take a Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPC-ET-OOo">
+                                <rect key="frame" x="0.0" y="713" width="375" height="65"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rPC-ET-OOo" secondAttribute="height" multiplier="75:13" id="Xwq-z9-cUb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <state key="normal" title="Choose a Photo">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rPC-ET-OOo" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="0G3-xX-bhq"/>
+                            <constraint firstItem="8PS-nn-hxf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7Eh-WX-rZm"/>
+                            <constraint firstItem="8PS-nn-hxf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="90I-T5-mXG"/>
+                            <constraint firstAttribute="trailing" secondItem="gV8-Ze-mbW" secondAttribute="trailing" id="CdA-Gs-VIZ"/>
+                            <constraint firstItem="Lk8-Q3-VLc" firstAttribute="top" secondItem="8PS-nn-hxf" secondAttribute="bottom" constant="75" id="Wjh-qz-mWO"/>
+                            <constraint firstItem="gV8-Ze-mbW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XyK-I2-i1v"/>
+                            <constraint firstItem="8PS-nn-hxf" firstAttribute="top" secondItem="gV8-Ze-mbW" secondAttribute="bottom" constant="66" id="fcd-0x-54x"/>
+                            <constraint firstItem="Lk8-Q3-VLc" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jLU-dH-aVL"/>
+                            <constraint firstItem="gV8-Ze-mbW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oKJ-gs-2wR"/>
+                            <constraint firstItem="rPC-ET-OOo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qJn-0b-aaK"/>
+                            <constraint firstItem="Lk8-Q3-VLc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wT7-Ew-2ot"/>
+                            <constraint firstItem="rPC-ET-OOo" firstAttribute="top" secondItem="Lk8-Q3-VLc" secondAttribute="bottom" constant="20" id="xWb-0C-9zW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.26600985221674"/>
+        </scene>
+    </scenes>
+</document>
