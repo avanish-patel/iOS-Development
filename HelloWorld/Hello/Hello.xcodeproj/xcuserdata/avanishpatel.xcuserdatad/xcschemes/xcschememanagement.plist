@@ -4,15 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>PassDataVC.xcscheme</key>
+		<key>Hello.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>PassDataVC.xcscheme_^#shared#^_</key>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CE3D4A22218E88240015158C</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
